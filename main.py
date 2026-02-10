@@ -9,10 +9,10 @@ endpoint = "https://howgood-apply-api.howgood.workers.dev/apply"
 payload = {
     "name": "Matthew Cann",
     "email": "matthewcameroncann@gmail.com",
-    "resume": "",       # URL to your resume
+    "resume": "https://github.com/mattcann1/howgoodsenior/blob/main/CV_Matthew_Cann_HowGood.pdf",       # URL to your resume
     "location": "Calgary, AB",     # e.g. "New York, NY"
-    "linkedin": "www.linkedin.com/in/matthew-cann",
-    "codeLink": "",     # URL to the repo/gist containing THIS script
+    "linkedin": "https://www.linkedin.com/in/matthew-cann/",
+    "codeLink": "https://github.com/mattcann1/howgoodsenior/blob/main/main.py",     # URL to the repo/gist containing THIS script
     "yearsPython": 6,
     "yearsDjango": 1,
     "repos": "https://mattcann1.github.io/mattcann1/",
@@ -31,3 +31,4 @@ resp = requests.post(
     },
 )
 print(resp.status_code, resp.json())
+pass
